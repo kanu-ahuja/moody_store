@@ -1,13 +1,496 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+button,
+input {
+  outline: 0;
+  border: none;
+  background: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Font-Family */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.container{
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* COMMON CSS START */
+
+.header_text{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #323334;
+  text-align: left;
+}
+
+/* COMMON CSS END */
+.xxxl_body_text{
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.xxl_body_text{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.xl_body_text{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.lg_body_text{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.md_body_text{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sm_body_text{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+/* Button */
+
+.primary_button{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+/* header section start */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 34px 0px 19px;
+  align-items: center;
+}
+.header_icons{
+  display: flex;
+  gap: 37px;
+}
+.divider{
+  border: 1px solid #323334
+}
+.navbar{
+  display: flex;
+  gap: 69px;
+  margin: 38px 0px;
+}
+.mobile_toggle{
+  display: none;
+}
+.header_advertisement{
+  display: flex;
+  gap:  15px;
+}
+.header_offer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 36px 0px 13px;
+}
+/* header section end */
+
+/* Sale upto start */
+.sale_upto{
+  border: 1px solid #000000;
+  background: #DBD0CCCC;
+  margin-bottom: 23px;
+}
+.sale_collection{
+  display: grid;
+  gap: 66px;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  margin: 62px 0px 48px;
+}
+.hero_heading{
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #323334;
+}
+.hero_bigtext{
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #A86A3D;
+  max-width: 466px;
+  width: 100%;
+  margin: 25px 0px 40px;
+}
+.sale_button{
+  padding: 16px;
+  border: 1px solid #323334;
+}
+/* Sale upto End */
+/* vintage_chair Start */
+.vintage_image{
+  position: relative;
+}
+.vintage_collection{
+  margin: 23px 0px 57px;
+}
+.vintage_card1{
+  background: #FAFAFA;
+  display: flex;
+  align-items: center;
+
+}
+.vintage_card2{
+  background: #EAE9E7;
+  display: flex;
+  align-items: center;
+
+}
+.vintage_texts{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+  left: 49.9%;
+}
+.vintage_heading{
+  white-space: nowrap;
+}
+.vintage_image{
+  padding: 15px 0px 0px 0px;
+}
+.vintage_texts2{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+  left: 50.4%;
+}
+.vintage_heading2{
+  max-width: 252px;
+  width: 100%;
+}
+/* vintage_chair End */
+
+/* Decor section Start */
+.decor_page{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 23px;
+  margin: 57px 0px 55px;
+}
+.decor_price{
+  font-weight: 700;
+}
+.decor_icon{
+  margin: 13px 0px 18px;
+}
+.decor_img{
+  margin-bottom: 32px;
+}
+.decor_img8{
+  position: relative;
+  background: #00000066;
+}
+.decor_texts{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  transform: translate(25%, -161%);
+  color: var(--secondary-color);
+}
+.decor_desc{
+  max-width: 210px;
+  width: 100%;
+}
+/* Decor section End */
+/* Bedsheet_set Start */
+.bedsheet_img{
+  width: 100%;
+  position: relative;
+}
+.bedsheet_set{
+  padding: 61px 103px 60px 130px;
+  background-color: var(--secondary-color);
+}
+.bedsheet_price{
+  display: flex;
+  gap: 21.5px;
+  align-items: center;
+  color: #7B5136;
+}
+
+/* Bedsheet_set End */
+
+
+@media screen and (max-width: 1100px) {
+  /* header section Start */
+
+  .navbar{
+    gap: 29px;
+    white-space: nowrap;
+  }
+  /* header section end */
+
+  /* Sale upto start */
+
+  .hero_heading{
+    font-size: 20px;
+  }
+  .hero_bigtext{
+    font-size: 30px;
+    max-width: 300px;
+    margin: 10px 0px;
+  }
+  .sale_collection{
+    gap: 33px;
+  }
+  .sale_image{
+    max-width: 383px;
+  }
+ 
+  /* Sale upto End */
+
+  /* vintage_chair Start */
+  .vintage_texts,.vintage_texts2{
+    left: 50%;
+  }
+  /* vintage_chair End */
+  /* Decor section Start */
+
+
+  /* Decor section End */
+  /* Bedsheet_set Start */
+
+
+
+
+/* Bedsheet_set End */
+}
+@media screen and (max-width: 991px) {
+  /* header section Start */
+
+  .navbar {
+    overflow: auto;
+  }
+  /* header section end */
+
+  /* Sale upto start */
+
+
+  .hero_bigtext{
+    line-height: 57px;
+  }
+  .header{
+    justify-content: space-around;
+  }
+  
+  /* Sale upto End */
+  /* vintage_chair Start */
+
+
+  /* vintage_chair End */
+
+  /* Decor section Start */
+
+
+/* Decor section End */
+/* Bedsheet_set Start */
+
+
+
+
+/* Bedsheet_set End */
+}
+
+@media screen and (max-width: 768px) {
+  /* header section Start */
+
+  .mobile_icon{
+    display: none;
+  }
+  /* header section end */
+
+  /* Sale upto start */
+
+ .hero_bigtext {
+  font-size: 17px;
+  max-width: 178px;
+  line-height: 20px;
+  }
+  .sale_collection{
+    gap: 15px;
+    margin: 52px 0px;
+  }
+  .sale_image{
+    max-width: 200px;
+  }
+
+  .sale_upto{
+    min-height: 290px;
+  }
+ 
+  /* Sale upto End */
+  /* vintage_chair Start */
+  .vintage_texts{
+    left: 15%;
+  }
+
+  .vintage_heading,.vintage_heading2{
+    font-size: 30px;
+  }
+  .vintage_texts2 {
+    left: 22%;
+  }
+  .vintage_texts{
+    left: 30%;
+  }
+
+  /* vintage_chair End */
+  /* Decor section Start */
+
+
+/* Decor section End */
+/* Bedsheet_set Start */
+
+
+
+
+/* Bedsheet_set End */
+}
+@media screen and (max-width: 391px) {
+  /* header section Start */
+
+  .xxxl_body_text{
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .xxl_body_text{
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .xl_body_text{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .mobile_toggle{
+    display: flex;
+  }
+  .mobile_icon{
+    display: none;
+  }
+  .header_logo{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header_icons {
+    gap: 22px;
+  }
+  
+  /* header section end */
+
+  /* Sale upto start */
+
+ 
+   .hero_heading {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    white-space: nowrap;
+  }
+  .hero_bigtext {
+    font-size: 20px;
+    line-height: 23.44px;
+    max-width: 122px;
+    width: 100%;
+    margin: 16px 0px 24px;
+  }
+  .sale_image{
+    max-width: 146px;
+  }
+  .sale_collection{
+    gap: 0px;
+    margin: 52px 0px;
+  }
+  .sale_upto{
+    min-height: 290px;
+  }
+ 
+  /* Sale upto End */
+  /* vintage_chair Start */
+ 
+    /* vintage_chair End */
+   /* Decor section Start */
+
+
+/* Decor section End */
+/* Bedsheet_set Start */
+
+
+
+
+/* Bedsheet_set End */
 }

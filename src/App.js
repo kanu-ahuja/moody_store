@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/common/header';
+import Bedsheet_set from './pages/bedsheet_set';
+import Decor from './pages/decor';
+import Sale_upto from './pages/sale_upto';
+import Vintage_chair from './pages/vintage_chair';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Sale_upto />
+      <Vintage_chair />
+      <Decor />
+      <Bedsheet_set />
+    </>
   );
 }
 

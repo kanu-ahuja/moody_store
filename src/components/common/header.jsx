@@ -8,7 +8,6 @@ import free_shipping from "../../image/free_shipping.svg"
 import money_back from "../../image/money_back.svg"
 import support from "../../image/support.svg"
 
-
 const Header = ()=>{
     const header_router = [
         {

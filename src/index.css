@@ -184,7 +184,7 @@ a {
 }
 .sale_button{
   padding: 16px;
-  border: 1px solid #323334;
+  border: 1px solid #000;
 }
 /* Sale upto End */
 /* vintage_chair Start */
@@ -245,8 +245,18 @@ a {
 .decor_icon{
   margin: 13px 0px 18px;
 }
+.decor_image{
+  max-width: 306px;
+  width: 100%;
+}
+.decor_image{
+  max-width: 306px;
+  width: 100%;
+}
 .decor_img{
   margin-bottom: 32px;
+  max-width: 360px;
+  width: 100%;
 }
 .decor_img8{
   position: relative;
@@ -273,6 +283,9 @@ a {
 .bedsheet_set{
   padding: 61px 103px 60px 130px;
   background-color: var(--secondary-color);
+  position: absolute;
+  left: 10%;
+  transform: translate(-10%, -120%);
 }
 .bedsheet_price{
   display: flex;
@@ -281,6 +294,26 @@ a {
   color: #7B5136;
 }
 
+.bedsheet_discount{
+  line-height: 18.75px;
+} 
+
+.bedsheet_desc{
+  max-width: 312px;
+  width: 100%;
+  color: #323334;
+}
+.bedsheet_offers{
+  display: flex;
+  align-items: center;
+  gap: 21.5px;
+}
+.bedsheet_alltext{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 27px;
+}
 /* Bedsheet_set End */
 
 
@@ -322,11 +355,11 @@ a {
 
   /* Decor section End */
   /* Bedsheet_set Start */
-
-
-
-
-/* Bedsheet_set End */
+  .bedsheet_set{
+    transform: translate(-10%, -116%);
+    padding: 30px;
+  }
+  /* Bedsheet_set End */
 }
 @media screen and (max-width: 991px) {
   /* header section Start */
@@ -357,9 +390,13 @@ a {
 
 /* Decor section End */
 /* Bedsheet_set Start */
-
-
-
+.bedsheet_set{
+  transform: translate(-10%, -104%);
+  padding: 15px;
+}
+.bedsheet_desc{
+  font-size: 14px;
+}
 
 /* Bedsheet_set End */
 }
@@ -413,10 +450,23 @@ a {
 
 /* Decor section End */
 /* Bedsheet_set Start */
-
-
-
-
+.bedsheet_set{
+  transform: translate(-10%, -107%);
+  padding: 15px;
+}
+.bedsheet_price{
+  gap: 10px;
+} 
+.bedsheet_alltext{
+  gap: 10px;
+  margin-top: 15px;
+}
+.sale_button{
+  padding: 9px;
+}
+.bedsheet_text1{
+  font-size: 20px;
+}
 /* Bedsheet_set End */
 }
 @media screen and (max-width: 391px) {
@@ -488,9 +538,20 @@ a {
 
 /* Decor section End */
 /* Bedsheet_set Start */
-
-
-
+.bedsheet_set{
+  transform: translate(-10%, -107%);
+    padding: 1px;
+}
+.bedsheet_desc,.bedsheet_offers{
+  display: none;
+}
+.bedsheet_alltext{
+  gap: 0px;
+  margin-top: 24px;
+}
+.bedsheet_set{
+  padding: 22px 20px;
+}
 
 /* Bedsheet_set End */
 }

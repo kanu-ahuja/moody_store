@@ -8,20 +8,21 @@ return(
         <div>
             <img src={Bedsheet_img} className="bedsheet_img"/>
             <div className="bedsheet_set">
-                <div>
-                    <h3 className="xxxl_body_text">BEDSHEET SETS</h3>
+                    <h3 className="xxxl_body_text  bedsheet_text1">BEDSHEET SETS</h3>
                     <div className="bedsheet_price">
-                        <span>
-                            <h4 className="xxxl_body_text">$50.00</h4>
-                        </span>
-                        <span>
-                            <del>$220.00</del>
-                        </span>
+                        <div className="bedsheet_alltext">
+                            <span className="bedsheet_offers">
+                                <h4 className="xxxl_body_text">$50.00</h4>
+                                <del className="bedsheet_discount">$220.00</del>
+                            </span>
+                            <span>
+                                 <p className="lg_body_text bedsheet_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </span>
+                            <span>
+                                <button class="primary_button sale_button">VIEW DETAILS</button>
+                            </span>
+                        </div>
                     </div>
-                    <span>
-                        <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    </span>
-                </div>  
             </div>
         </div>
     </>

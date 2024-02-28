@@ -51,7 +51,8 @@ const Decor = ()=>{
         return(
             <>
             <section className="container">
-            {/* <Swiper
+                <div className="decor_page">
+            <Swiper
                 spaceBetween={20}
                 slidesPerView={1}
                 breakpoints={{
@@ -71,13 +72,12 @@ const Decor = ()=>{
             }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-           > */}
-              <div className="decor_page">
+           >
                         {
                             decor_page.length>0 && decor_page.map((item,index)=>{
                                 return(
                                     index===0 ?
-                                    // <SwiperSlide>
+                                    <SwiperSlide>
                                         <div>
                                             <img src={require(`../image/${item?.image}`)} className="decor_img" alt="error"/>
                                             <div className="decor_texts">
@@ -88,10 +88,10 @@ const Decor = ()=>{
                                                 </span>
                                             </div>
                                         </div>
-                                    // </SwiperSlide>
+                                    </SwiperSlide>
                                     :
                                     index===7 ?
-                                    // <SwiperSlide>
+                                    <SwiperSlide>
                                         <div>
                                             <img src={require(`../image/${item?.image}`)} className="decor_img" alt="error"/>
                                             <div className="decor_texts">
@@ -102,21 +102,21 @@ const Decor = ()=>{
                                                 </span>
                                             </div>
                                         </div>
-                                    // </SwiperSlide>
+                                    </SwiperSlide>
                                     :
-                                    // <SwiperSlide>
+                                    <SwiperSlide>
                                         <div>
                                             <img src={require(`../image/${item?.image}`)} className="decor_img" alt="error"/>
                                             <h2 className="xl_body_text">{item?.name}</h2>
                                             <img src={require(`../image/${item?.icon}`)} className="decor_icon" alt="error"/>
                                             <h2 className="xxl_body_text decor_price">{item?.price}</h2>
                                         </div>
-                                    // </SwiperSlide>
+                                    </SwiperSlide>
                                 )
                             })
                         }
+              </Swiper>
               </div>
-              {/* </Swiper> */}
               </section>
             </>
         )

@@ -234,9 +234,9 @@ a {
 
 /* Decor section Start */
 .decor_page{
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 23px;
+  gap: 23px; */
   margin: 57px 0px 55px;
 }
 .decor_price{
@@ -315,6 +315,75 @@ a {
     margin-top: 27px;
 }
 /* Bedsheet_set End */
+/* Top Rating Start */
+
+.top_rating{
+  margin: 84px 0px 87px;
+}
+.rating_cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+.rating_heading{
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.rating_item{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.rating_image{
+  max-width: 100px;
+  width: 100%;
+}
+.rating_texts{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* Top Rating End */
+/* Sign_up_letter start */
+.signup_letter{
+  display: flex;
+  justify-content: center;
+}
+.signup_products{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 16px 98px;
+  color: var(--secondary-color);
+  background: #323334;
+}
+.signup_alltexts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 91px 0px 110px;
+}
+.sign_up_email{
+  border: 1px solid #323334;
+  padding: 15px 0px 15px 26px;
+}
+.email_text{
+  font-weight: 400;
+  color: #323334;
+  line-height : 18.75px;
+}
+.signup_heading{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* Sign_up_letter start */
+
 
 
 @media screen and (max-width: 1100px) {
@@ -360,6 +429,10 @@ a {
     padding: 30px;
   }
   /* Bedsheet_set End */
+  /* rating cards start */
+ 
+  /* rating cards End */
+
 }
 @media screen and (max-width: 991px) {
   /* header section Start */
@@ -468,6 +541,12 @@ a {
   font-size: 20px;
 }
 /* Bedsheet_set End */
+/* top_rating start */
+.rating_item{
+  gap: 16px;  
+}
+/* top_rating End */
+
 }
 @media screen and (max-width: 391px) {
   /* header section Start */
@@ -554,4 +633,7 @@ a {
 }
 
 /* Bedsheet_set End */
+.rating_item {
+    gap: 24px;
+}
 }

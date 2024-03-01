@@ -76,7 +76,7 @@ const Header = ()=>{
                             <img src={money_back} alt="error"/>
                             <h3 className="sm_body_text">100% MONEY BACK</h3>
                         </span>
-                        <span className="header_advertisement">
+                        <span className="header_advertisement header_mobile">
                             <img src={support} alt="error"/>
                             <h3 className="sm_body_text">SUPPORT 24/7</h3>
                         </span>

@@ -69,10 +69,10 @@ const Decor = ()=>{
                     391: {
                         slidesPerView: 1,
                     },
-            }}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-           >
+                }}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
                         {
                             decor_page.length>0 && decor_page.map((item,index)=>{
                                 return(

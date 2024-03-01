@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/common/footer';
 import Header from './components/common/header';
 import Bedsheet_set from './pages/bedsheet_set';
 import Decor from './pages/decor';
@@ -17,6 +18,7 @@ function App() {
       <Bedsheet_set />
       <Top_rating />
       <Sign_up_letter />
+      <Footer />
     </>
   );
 }

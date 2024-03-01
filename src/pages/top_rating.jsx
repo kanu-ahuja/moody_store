@@ -1,4 +1,6 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const Top_rating = () =>{
 
@@ -69,22 +71,47 @@ const Top_rating = () =>{
             <div className="top_rating">
                 <h2 className="rating_heading">TOP RATING</h2>
                 <div className="rating_cards">
+                <Swiper
+                spaceBetween={24}
+                slidesPerView={1}
+                breakpoints={{
+                    1100: {
+                        slidesPerView: 3,
+                    },
+                    700: {
+                        slidesPerView: 2
+                    },
+                    576: {
+                        slidesPerView: 1.5,
+                    },
+
+                    391: {
+                        slidesPerView: 1,
+                        spaceBetween: 35,
+                    },
+            }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+           >
                     {
-                         rating.length > 0 && rating.map((item,index)=>{
-                           return(
-                                <>
-                                    <div className="rating_item">
-                                        <img src={require(`../image/${item?.image}`)} alt="error"/>
-                                        <div className="rating_texts">
-                                            <h3 className="xl_body_text rating_image">{item?.heading}</h3>
-                                            <img src={require(`../image/${item?.icon}`)} alt="error"/>
-                                            <h4 className="xxl_body_text">{item?.price}</h4>
+                        rating.length > 0 && rating.map((item,index)=>{
+                            return(
+                                <>  
+                                    <SwiperSlide>
+                                        <div className="rating_item">
+                                            <img src={require(`../image/${item?.image}`)} alt="error"/>
+                                            <div className="rating_texts">
+                                                <h3 className="xl_body_text rating_image">{item?.heading}</h3>
+                                                <img src={require(`../image/${item?.icon}`)} alt="error"/>
+                                                <h4 className="xxl_body_text decor_price">{item?.price}</h4>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </SwiperSlide>
                                 </>
                            )
                         })  
                     }
+                 </Swiper>
                 </div>
             </div>
         </div>

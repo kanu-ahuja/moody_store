@@ -12,12 +12,12 @@ const Sign_up_letter = ()=>{
                         <h1 className="xxxl_body_text">SIGN UP FOR THE NEWSLETTER</h1>
                         <h3 className="xl_body_text">Subscribe for the latest stories and promotions</h3>
                     </span>
-                    <span className="sign_up_email">
+                    <div className="letter_email">
                         <input type="email" placeholder="Enter your e-mail address"/>
-                        <span>  
-                        <img src={image} alt="error" className="lg_body_text email_text" />
-                        </span>
-                    </span>
+                        <div className="signup_email">  
+                            <img src={image} alt="error" className="lg_body_text email_text" />
+                        </div>
+                        </div>
                 </div>
         </div>
     )

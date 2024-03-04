@@ -9,7 +9,7 @@ import Top_rating from './pages/top_rating';
 import Vintage_chair from './pages/vintage_chair';
 
 function App() {
-  return (
+  return (  
     <>
       <Header />
       <Sale_upto />
